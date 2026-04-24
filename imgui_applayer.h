@@ -185,13 +185,13 @@ struct ImGuiAppLayerBase : ImGuiInterface
 
 struct ImGuiAppItemBase : ImGuiInterface
 {
-  virtual void OnInitialize(ImGuiApp*)                 const = 0;
-  virtual void OnShutdown(ImGuiApp*)                   const = 0;
+  virtual void OnInitialize(ImGuiApp*)                         const = 0;
+  virtual void OnShutdown(ImGuiApp*)                           const = 0;
   virtual void OnGetCommand(const ImGuiApp*, ImGuiAppCommand*) const = 0;
-  virtual void OnUpdate(const ImGuiApp* app, float dt) const = 0;
-  virtual void OnRender(const ImGuiApp*)               const = 0;
-  virtual void OnStylePush(const ImGuiApp*)            const = 0;
-  virtual void OnStylePop(const ImGuiApp*)             const = 0;
+  virtual void OnUpdate(const ImGuiApp* app, float dt)         const = 0;
+  virtual void OnRender(const ImGuiApp*)                       const = 0;
+  virtual void OnStylePush(const ImGuiApp*)                    const = 0;
+  virtual void OnStylePop(const ImGuiApp*)                     const = 0;
 };
 
 struct ImGuiAppWindowBase : ImGuiAppItemBase
@@ -363,13 +363,13 @@ struct ImGuiAppWindow : ImGuiAppWindowBase
 {
   ImGuiAppWindow() { GenerateUniqueLabel<T>(this->Label, sizeof(this->Label)); }
 
-  virtual void OnInitialize(ImGuiApp*)                 const override {};
-  virtual void OnShutdown(ImGuiApp*)                   const override {};
+  virtual void OnInitialize(ImGuiApp*)                         const override {};
+  virtual void OnShutdown(ImGuiApp*)                           const override {};
   virtual void OnGetCommand(const ImGuiApp*, ImGuiAppCommand*) const override {};
-  virtual void OnUpdate(const ImGuiApp* app, float dt) const override {};
-  virtual void OnRender(const ImGuiApp*)               const override {};
-  virtual void OnStylePush(const ImGuiApp*)            const override {};
-  virtual void OnStylePop(const ImGuiApp*)             const override {};
+  virtual void OnUpdate(const ImGuiApp* app, float dt)         const override {};
+  virtual void OnRender(const ImGuiApp*)                       const override {};
+  virtual void OnStylePush(const ImGuiApp*)                    const override {};
+  virtual void OnStylePop(const ImGuiApp*)                     const override {};
 };
 
 template <typename T>
@@ -377,13 +377,13 @@ struct ImGuiAppSidebar : ImGuiAppSidebarBase
 {
   ImGuiAppSidebar() { GenerateUniqueLabel<T>(this->Label, sizeof(this->Label)); }
 
-  virtual void OnInitialize(ImGuiApp*)                 const override {};
-  virtual void OnShutdown(ImGuiApp*)                   const override {};
+  virtual void OnInitialize(ImGuiApp*)                         const override {};
+  virtual void OnShutdown(ImGuiApp*)                           const override {};
   virtual void OnGetCommand(const ImGuiApp*, ImGuiAppCommand*) const override {};
-  virtual void OnUpdate(const ImGuiApp* app, float dt) const override {};
-  virtual void OnRender(const ImGuiApp*)               const override {};
-  virtual void OnStylePush(const ImGuiApp*)            const override {};
-  virtual void OnStylePop(const ImGuiApp*)             const override {};
+  virtual void OnUpdate(const ImGuiApp* app, float dt)         const override {};
+  virtual void OnRender(const ImGuiApp*)                       const override {};
+  virtual void OnStylePush(const ImGuiApp*)                    const override {};
+  virtual void OnStylePop(const ImGuiApp*)                     const override {};
 };
 
 namespace ImGui
