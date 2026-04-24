@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="demo">
+      <UniqueIdentifier>{11111111-1111-1111-1111-111111111111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui_applayer">
+      <UniqueIdentifier>{22222222-2222-2222-2222-222222222222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{33333333-3333-3333-3333-333333333333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui\backends">
+      <UniqueIdentifier>{44444444-4444-4444-4444-444444444444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glfw">
+      <UniqueIdentifier>{55555555-5555-5555-5555-555555555555}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui_applayer.cpp">
+      <Filter>imgui_applayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\imgui\backends\imgui_impl_glfw.cpp">
+      <Filter>imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\imgui\backends\imgui_impl_opengl3.cpp">
+      <Filter>imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\context.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\init.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\input.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\monitor.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\platform.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\vulkan.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\window.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\egl_context.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\osmesa_context.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\null_init.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\null_joystick.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\null_monitor.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\null_window.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\win32_init.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\win32_joystick.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\win32_module.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\win32_monitor.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\win32_thread.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\win32_time.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\win32_window.c"><Filter>glfw</Filter></ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\wgl_context.c"><Filter>glfw</Filter></ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\imgui_applayer.h"><Filter>imgui_applayer</Filter></ClInclude>
+    <ClInclude Include="..\..\external\imgui\imconfig.h"><Filter>imgui</Filter></ClInclude>
+    <ClInclude Include="..\..\external\imgui\imgui.h"><Filter>imgui</Filter></ClInclude>
+    <ClInclude Include="..\..\external\imgui\imgui_internal.h"><Filter>imgui</Filter></ClInclude>
+    <ClInclude Include="..\..\external\imgui\backends\imgui_impl_glfw.h"><Filter>imgui\backends</Filter></ClInclude>
+    <ClInclude Include="..\..\external\imgui\backends\imgui_impl_opengl3.h"><Filter>imgui\backends</Filter></ClInclude>
+    <ClInclude Include="..\..\external\imgui\backends\imgui_impl_opengl3_loader.h"><Filter>imgui\backends</Filter></ClInclude>
+  </ItemGroup>
+</Project>
